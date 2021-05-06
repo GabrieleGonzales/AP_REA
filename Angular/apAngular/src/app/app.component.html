@@ -1,0 +1,28 @@
+<div style="width: 50%; justify-content: center;">
+  <div>
+    <span><h3>Cálculo de IMC</h3></span>
+    <span><h4>Digite apenas numeros inteiros</h4></span>
+    <div><span>Peso      :   </span>
+      <input type="text" placeholder="Digite o Peso" [value]="peso" (input)="peso = $event.target.value" /></div>
+      <div><span>Altura: </span>
+    <input type="text" placeholder="Digite a Altura" [value]="altura" (input)="altura = $event.target.value"  /></div>
+  <button (click)="calculateIMC()">Calcular IMC</button> <br />
+  <span><h4>Seu IMC é: {{ imc }}</h4></span><br>
+  </div>
+  <br /><br />
+  ------------------------------------------------------------------------------------------------
+  <div><br><br>
+    <span><h3>Filtro de consoantes/vogais</h3></span>
+    <span><h4>Digite o Texto</h4></span>
+    <div><span>Texto Completo:   </span><input placeholder="Digite algum texto" [value]="txtFilter" (input)="txtFilter = $event.target.value"></div>
+    <div><span>Escolha o Modo:   </span><select [value]="selected" (input)="selected = $event.target.value">
+      <option disabled value="">Escolha um item</option>
+      <option>Vogais</option>
+      <option>Consoantes</option>
+    </select></div>
+    <button (click)="filterText()">Filtrar Texto</button> <br />
+    <span><h4>Texto Filtrado: {{ filteredText }}</h4></span><br>
+    
+  </div>
+
+</div>

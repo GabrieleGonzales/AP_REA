@@ -1,24 +1,24 @@
 <template>
   <div id="app">
     <div>
-      <span>Cálculo de IMC</span><br>
-      <span>Digite apenas numeros inteiros</span><br>
-      <span>Peso:   </span><input v-model="peso" placeholder="Digite o Peso"><br>
-      <span>Altura: </span><input v-model="altura" placeholder="Digite a Altura"><br>
-      <span>Seu IMC é: {{ imc }}</span><br>
+      <span><h3>Cálculo de IMC</h3></span>
+      <span><h4>Digite apenas numeros inteiros</h4></span>
+      <div><span>Peso:   </span><input v-model="peso" placeholder="Digite o Peso"></div>
+      <div><span>Altura: </span><input v-model="altura" placeholder="Digite a Altura"></div>
+      <span><h4>Seu IMC é: {{ imc }}</h4></span><br>
       
     </div><br><br>
-    ---------------------------------------------------------------
+        ------------------------------------------------------------------------------------------------
     <div><br><br>
-      <span>Filtro de consoantes/vogais</span><br>
-      <span>Digite o Texto</span><br>
-      <span>Texto Completo:   </span><input v-model="txtFilter" placeholder="Digite algum texto"><br>
-      <span>Escolha o Modo:   </span><select v-model="selected">
+      <span><h3>Filtro de consoantes/vogais</h3></span>
+      <span><h4>Digite o Texto</h4></span>
+      <div><span>Texto Completo:   </span><input v-model="txtFilter" placeholder="Digite algum texto"></div>
+      <div><span>Escolha o Modo:   </span><select v-model="selected" style="width: 170px">
         <option disabled value="">Escolha um item</option>
         <option>Vogais</option>
         <option>Consoantes</option>
-      </select><br>
-      <span>Texto Filtrado: {{ filteredText }}</span><br>
+      </select></div><br>
+      <span><h4>Texto Filtrado: {{ filteredText }}</h4></span><br>
       
     </div>
   </div>
